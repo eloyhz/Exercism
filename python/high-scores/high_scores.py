@@ -1,21 +1,13 @@
 def latest(scores):
-	return scores[-1] if len(scores) > 0 else []
+	return scores[-1] if len(scores) > 0 else None
 
 
 def personal_best(scores):
-	scores.sort()
-	return scores[-1] if len(scores) > 0 else []
+	sorted_scores = sorted(scores)
+	return sorted_scores[-1] if len(sorted_scores) > 0 else None
 
 def personal_top_three(scores):
-	scores.sort()
-	result = []
-	if len(scores) >= 3:
-		result.append(scores[-1])
-		result.append(scores[-2])
-		result.append(scores[-3])
-	elif len(scores) == 2:
-		result.append(scores[-1])
-		result.append(scores[-2])
-	elif len(scores) == 1:
-		result.append(scores[-1])
-	return result
+	sorted_scores = sorted(scores)
+	top_three = sorted_scores[-3:]
+	top_three.reverse()
+	return top_three

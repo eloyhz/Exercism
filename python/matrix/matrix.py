@@ -6,17 +6,14 @@ class Matrix:
         r = matrix_string.split('\n')
         for s in r:
             # get a list of columns (numbers as strings)
-            t = s.split()
-            row = []
-            for u in t:
-                row.append(int(u))
+            row = list(map(int, s.split()))
             self.matrix.append(row)
 
     def row(self, index):
-        return self.matrix[index - 1]
+        # return a slice of the whole list (copy) to avoid mutation
+        return self.matrix[index - 1][:]
 
     def column(self, index):
-        col = []
-        for i in range(0, len(self.matrix)):
-            col.append(self.matrix[i][index-1])
+        # return a column using list comprehension
+        col = [self.matrix[i][index - 1] for i in range(len(self.matrix))]
         return col

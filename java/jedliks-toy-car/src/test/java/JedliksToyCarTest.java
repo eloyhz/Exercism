@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -7,7 +6,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class JedliksToyCarTest {
     @Test
-    @Disabled
     @Tag("task:1")
     @DisplayName("The static buy method returns a new remote controlled car instance")
     public void buyNewCarReturnsInstance() {
@@ -16,7 +14,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:1")
     @DisplayName("The static buy method returns each time a new remote controlled car instance")
     public void buyNewCarReturnsNewCarEachTime() {
@@ -26,7 +23,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:2")
     @DisplayName("The distanceDisplay method shows 0 meters message on a new car")
     public void newCarDistanceDisplay() {
@@ -35,7 +31,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:3")
     @DisplayName("The batteryDisplay method shows full battery message on a new car")
     public void newCarBatteryDisplay() {
@@ -44,7 +39,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:4")
     @DisplayName("The distanceDisplay method shows the correct message after driving once")
     public void distanceDisplayAfterDrivingOnce() {
@@ -54,7 +48,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:4")
     @DisplayName("The distanceDisplay method shows the correct message after driving multiple times")
     public void distanceDisplayAfterDrivingMultipleTimes() {
@@ -68,7 +61,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:5")
     @DisplayName("The batteryDisplay method shows the correct message after driving once")
     public void batteryDisplayAfterDrivingOnce() {
@@ -79,7 +71,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:5")
     @DisplayName("The batteryDisplay method shows the correct battery percentage after driving multiple times")
     public void batteryDisplayAfterDrivingMultipleTimes() {
@@ -93,7 +84,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:5")
     @DisplayName("The batteryDisplay method shows battery empty after draining all battery")
     public void batteryDisplayWhenBatteryEmpty() {
@@ -111,7 +101,6 @@ public class JedliksToyCarTest {
     }
 
     @Test
-    @Disabled
     @Tag("task:6")
     @DisplayName("The distanceDisplay method shows the correct message after driving and draining all battery")
     public void distanceDisplayWhenBatteryEmpty() {

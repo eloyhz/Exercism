@@ -17,7 +17,7 @@ public class PascalsTriangleGeneratorTest {
         assertThat(pascalsTriangleGenerator.generateTriangle(0)).isEqualTo(expectedOutput);
     }
 
-    @Disabled("Remove to run test")
+    //@Disabled("Remove to run test")
     @Test
     @DisplayName("single row")
     public void testTriangleWithOneRow() {
@@ -28,7 +28,7 @@ public class PascalsTriangleGeneratorTest {
         assertThat(pascalsTriangleGenerator.generateTriangle(1)).isEqualTo(expectedOutput);
     }
 
-    @Disabled("Remove to run test")
+    //@Disabled("Remove to run test")
     @Test
     @DisplayName("two rows")
     public void testTriangleWithTwoRows() {
@@ -40,7 +40,7 @@ public class PascalsTriangleGeneratorTest {
         assertThat(pascalsTriangleGenerator.generateTriangle(2)).isEqualTo(expectedOutput);
     }
 
-    @Disabled("Remove to run test")
+    //@Disabled("Remove to run test")
     @Test
     @DisplayName("three rows")
     public void testTriangleWithThreeRows() {
@@ -53,7 +53,7 @@ public class PascalsTriangleGeneratorTest {
         assertThat(pascalsTriangleGenerator.generateTriangle(3)).isEqualTo(expectedOutput);
     }
 
-    @Disabled("Remove to run test")
+    //@Disabled("Remove to run test")
     @Test
     @DisplayName("four rows")
     public void testTriangleWithFourRows() {
@@ -67,7 +67,7 @@ public class PascalsTriangleGeneratorTest {
         assertThat(pascalsTriangleGenerator.generateTriangle(4)).isEqualTo(expectedOutput);
     }
 
-    @Disabled("Remove to run test")
+    //@Disabled("Remove to run test")
     @Test
     @DisplayName("five rows")
     public void testTriangleWithFiveRows() {
@@ -82,7 +82,7 @@ public class PascalsTriangleGeneratorTest {
         assertThat(pascalsTriangleGenerator.generateTriangle(5)).isEqualTo(expectedOutput);
     }
 
-    @Disabled("Remove to run test")
+    //@Disabled("Remove to run test")
     @Test
     @DisplayName("six rows")
     public void testTriangleWithSixRows() {
@@ -98,7 +98,7 @@ public class PascalsTriangleGeneratorTest {
         assertThat(pascalsTriangleGenerator.generateTriangle(6)).isEqualTo(expectedOutput);
     }
 
-    @Disabled("Remove to run test")
+    //@Disabled("Remove to run test")
     @Test
     @DisplayName("ten rows")
     public void testTriangleWithTenRows() {
